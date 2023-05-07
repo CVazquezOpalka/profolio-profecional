@@ -9,4 +9,6 @@ export const Footer = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.footer`
+
+`;
