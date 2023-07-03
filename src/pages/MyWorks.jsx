@@ -73,6 +73,11 @@ export const MyWorks = () => {
           page={"https://rickandmortyappcv.netlify.app/"}
         />
       </div>
+      <p>
+        {" "}
+        Estos son algunos de mis trabajos, si deseas ver mas contenido ingresa{" "}
+        <a href="https://github.com/CVazquezOpalka">aqui</a>
+      </p>
     </Container>
   );
 };
@@ -88,5 +93,10 @@ const Container = styled.section`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  p{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
   }
 `;

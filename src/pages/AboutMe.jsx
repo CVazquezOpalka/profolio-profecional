@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import HeroImage from "../assets/hero.png";
 
-
 export const AboutMe = () => {
   return (
     <Container id="AboutMe">
@@ -19,9 +18,9 @@ export const AboutMe = () => {
               del programa Buenos Aires codo a codo, m dedico a la maquetacion
               web, y a crear aplicaciones con el stack "PERN", espero que
               disfrutes mi contenido, en la seccion de{" "}
-              <a href='#'>MyWork</a> prodras ver alguno de los
-              proyectos que eh desarrollado, sin embargo, sigo creando nuevos
-              proyectos, para aumentar mi conocimiento.
+              <a href="#MyWorks">My Work</a> prodras ver alguno de los proyectos
+              que eh desarrollado, sin embargo, sigo creando nuevos proyectos,
+              para aumentar mi conocimiento.
             </p>
           </div>
         </div>
@@ -32,7 +31,7 @@ export const AboutMe = () => {
 
 const Container = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: 700px;
   transition: 0.5s ease;
   .section {
     .content {
@@ -78,7 +77,19 @@ const Container = styled.section`
         margin: 0 auto;
         letter-spacing: 1px;
         font-size: 16px;
+        a{
+          text-decoration: none;
+          }
+        }
       }
     }
+  }
+  @media (max-width:412px){
+    height: 950px;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;

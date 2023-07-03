@@ -121,4 +121,5 @@ const Container = styled.footer`
     text-transform: uppercase;
     
   }
+  
 `;
