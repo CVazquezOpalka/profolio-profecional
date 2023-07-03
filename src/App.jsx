@@ -1,11 +1,5 @@
-import {
-  Navbar,
-  Footer,
-  AboutMe,
-  Skills,
-  Touch,
-  MyWorks,
-} from "./components/index";
+import { Navbar, Footer } from "./components/index";
+import { AboutMe, Touch, Skills, MyWorks } from "./pages/index";
 import styled from "styled-components";
 function App() {
   return (

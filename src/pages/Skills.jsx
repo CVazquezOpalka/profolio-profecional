@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Card } from "./Card";
+import { Card } from "../components/Card";
 import CSSl from "../assets/logoCss.png";
 import HTMLl from "../assets/logoHtml.png";
 import JSl from "../assets/logoJava.png";
@@ -27,9 +27,9 @@ export const Skills = () => {
         <Card title={"SASS"} image={SASSl} score={4} />
         <Card title={"EXPRESS"} image={EXPRESSl} score={4} />
         <Card title={"REACT"} image={REACTl} score={5} />
-        <Card title={"REDUX"} image={REDUXl} score={3} />
+        <Card title={"REDUX"} image={REDUXl} score={5} />
         <Card title={"NODE JS"} image={NODEl} score={4} />
-        <Card title={"POSTGRESS"} image={POSTGRESl} score={3} />
+        <Card title={"POSTGRESS"} image={POSTGRESl} score={4} />
         <Card title={"MATERIAL UI"} image={MATERIALl} score={4} />
         <Card title={"BOOTSTRAP"} image={BOOTSl} score={4} />
         <Card title={"FIREBASE"} image={FIREl} score={4} />

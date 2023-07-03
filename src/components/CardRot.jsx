@@ -7,25 +7,27 @@ import { CgWebsite } from "react-icons/cg";
 export const CardRot = ({ image, title, overview, git, page }) => {
   return (
     <Container>
-      <div class="card">
-        <div class="box">
-          <div class="imgBx">
+      <div className="card">
+        <div className="box">
+          <div className="imgBx">
             <img src={image} alt="imagen de muestra de la pagina" />
           </div>
-          <div class="contentBx">
+          <div className="contentBx">
             <div>
               <h2 style={{ width: "100%", textAlign: "center" }}>{title}</h2>
               <p>{overview}</p>
-              <span>
-                <a href={page} target="_blank">
-                  <CgWebsite />
-                </a>
-              </span>
-              <span>
-                <a href={git} target="_blank">
-                  <AiFillGithub />
-                </a>
-              </span>
+              <div className="span_content">
+                <span>
+                  <a href={page} target="_blank">
+                    <CgWebsite />
+                  </a>
+                </span>
+                <span>
+                  <a href={git} target="_blank">
+                    <AiFillGithub />
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -101,16 +103,28 @@ const Container = styled.div`
           color: #fff;
           backface-visibility: hidden;
         }
+        .span_content {
+          width: 100px;
+          height: auto;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
           span {
             display: inline-block;
-            margin-left: 20px;
+            padding: 3px 5px;
+            transition: 0.3s ease;
+            &:hover {
+              transform: scale(1.1);
+            }
             a {
               width: 100%;
               text-align: center;
               svg {
                 font-size: 30px;
                 color: #fff;
-              
+              }
             }
           }
         }

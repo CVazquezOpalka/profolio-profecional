@@ -3,9 +3,7 @@ import styled from "styled-components";
 
 import { MdOutlineStar, MdOutlineStarOutline } from "react-icons/md";
 
-export const Card = ({title, image, score}) => {
-          
-    
+export const Card = ({ title, image, score }) => {
   return (
     <Container>
       <picture>
@@ -16,11 +14,13 @@ export const Card = ({title, image, score}) => {
           <h3>{title}</h3>
         </div>
         <div className="rating">
-      {
-        [...new Array(5)].map((star, index)=>{
-            return index<score ? <MdOutlineStar/> : <MdOutlineStarOutline/>
-        })
-      }
+          {[...new Array(5)].map((star, index) => {
+            return index < score ? (
+              <MdOutlineStar key={index} />
+            ) : (
+              <MdOutlineStarOutline key={index} />
+            );
+          })}
         </div>
       </div>
     </Container>
@@ -69,17 +69,17 @@ const Container = styled.div`
       font-weight: 500;
     }
     .rating {
-        display: flex;
-        background-color: rgba(0,0,0,0.2);
-        padding: 5px 10px;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 5px 10px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
       svg {
         font-size: 18px;
         color: red;
         letter-spacing: 1px;
-        z-index: 1000
+        z-index: 1000;
       }
     }
   }

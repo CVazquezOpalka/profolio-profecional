@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HeroImage from "../assets/hero.png";
 
+
 export const AboutMe = () => {
   return (
     <Container id="AboutMe">
@@ -14,16 +15,13 @@ export const AboutMe = () => {
             <h1>Cristian Miguel Vazquez Opalka</h1>
             <h3>Full Stack Developer</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ab
-              debitis ad voluptas, deserunt et? Pariatur accusantium quos vero
-              at. Suscipit non minus debitis in eum quo enim eveniet
-              consequatur.Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Fugit ab debitis ad voluptas, deserunt et? Pariatur
-              accusantium quos vero at. Suscipit non minus debitis in eum quo
-              enim eveniet consequatur.Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Fugit ab debitis ad voluptas, deserunt et?
-              Pariatur accusantium quos vero at. Suscipit non minus debitis in
-              eum quo enim eveniet consequatur.
+              Mi nombre es Cristian Miguel Vazquez Opalka, actualmente recibo
+              del programa Buenos Aires codo a codo, m dedico a la maquetacion
+              web, y a crear aplicaciones con el stack "PERN", espero que
+              disfrutes mi contenido, en la seccion de{" "}
+              <a href='#'>MyWork</a> prodras ver alguno de los
+              proyectos que eh desarrollado, sin embargo, sigo creando nuevos
+              proyectos, para aumentar mi conocimiento.
             </p>
           </div>
         </div>
@@ -61,10 +59,12 @@ const Container = styled.section`
       }
     }
     .contentBottom {
+      width: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 25px;
+      gap: 20px;
       h1 {
         font-family: "Rubik Dirt";
         font-size: 40px;
@@ -74,7 +74,10 @@ const Container = styled.section`
         font-size: 20px;
       }
       p {
-        margin: 0 30px;
+        width: 70%;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        font-size: 16px;
       }
     }
   }
