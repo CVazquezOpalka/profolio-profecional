@@ -33,8 +33,9 @@ export const AboutMe = () => {
 
 const Container = styled.section`
   width: 100vw;
-  height: 100vh;
-  transition: 0.5s ease;
+ height: auto;
+ margin-bottom: 30px;
+ transition: 0.5s ease;
   .section {
     .content {
       display: flex;

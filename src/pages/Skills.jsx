@@ -46,9 +46,9 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  transition: 0.3 ease-in-out;
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     width: 100%;
     text-align: center;
     font-size: 35px;
