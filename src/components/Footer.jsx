@@ -16,11 +16,11 @@ export const Footer = () => {
             <li>Cristian Miguel Vazquez Opalka</li>
             <li>
               <AiOutlineWhatsApp className="whatsap" />
-              +54 3888-31-4283
+              +549 3888-31-4283
             </li>
             <li className="email">
               <MdAlternateEmail className="email" />
-              cristianvazquez80@gmail.com
+              cristianvazquez.dev@gmail.com
             </li>
           </ul>
         </div>
@@ -43,7 +43,11 @@ export const Footer = () => {
         </div>
       </div>
       <div className="copyrigth">
-        <p><i>Web de Portfolio creada por Cristian Vazquez, derechos reservados</i></p>
+        <p>
+          <i>
+            Web de Portfolio creada por Cristian Vazquez, derechos reservados
+          </i>
+        </p>
       </div>
     </Container>
   );
@@ -117,9 +121,31 @@ const Container = styled.footer`
       }
     }
   }
-  .copyrigth{
+  .copyrigth {
     text-transform: uppercase;
-    
   }
-  
+  @media (max-width: 384px) {
+    height: 300px;
+    .content_box {
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      .datos {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .social {
+        width: 100%;
+        ul {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .copyrigth {
+      width: 100%;
+
+      text-align: center;
+    }
+  }
 `;

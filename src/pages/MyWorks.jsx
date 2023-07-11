@@ -94,9 +94,13 @@ const Container = styled.section`
     justify-content: center;
     flex-wrap: wrap;
   }
-  p{
+  p {
     width: 100%;
     text-align: center;
     font-size: 18px;
+  }
+  @media (max-width: 412px) {
+    height: auto;
+    margin-bottom: 100px;
   }
 `;

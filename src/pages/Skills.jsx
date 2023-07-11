@@ -41,16 +41,14 @@ export const Skills = () => {
 const Container = styled.section`
   position: relative;
   width: 100vw;
-  height: 700px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-bottom: 30px;
     width: 100%;
     text-align: center;
     font-size: 35px;
@@ -63,16 +61,17 @@ const Container = styled.section`
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 30px;
   }
-  @media (max-width:875px){
+  @media (max-width: 875px) {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  @media (max-width:412px){
+  @media (max-width: 384px) {
     height: 1800px;
   }
 `;

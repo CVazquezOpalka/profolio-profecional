@@ -11,7 +11,9 @@ export const AboutMe = () => {
             <img src={HeroImage} alt="Logo de la imagen" />
           </picture>
           <div className="contentBottom">
-            <h1>Cristian Miguel Vazquez Opalka</h1>
+            <h1 style={{ width: "100%", textAlign: "center" }}>
+              Cristian Miguel Vazquez Opalka
+            </h1>
             <h3>Full Stack Developer</h3>
             <p>
               Mi nombre es Cristian Miguel Vazquez Opalka, actualmente recibo
@@ -31,7 +33,7 @@ export const AboutMe = () => {
 
 const Container = styled.section`
   width: 100vw;
-  height: 700px;
+  height: 100vh;
   transition: 0.5s ease;
   .section {
     .content {
@@ -77,19 +79,14 @@ const Container = styled.section`
         margin: 0 auto;
         letter-spacing: 1px;
         font-size: 16px;
-        a{
+        a {
           text-decoration: none;
-          }
         }
       }
     }
   }
-  @media (max-width:412px){
-    height: 950px;
-    display: flex;
-  
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  @media (max-width: 412px) {
+    height: auto;
   }
 `;

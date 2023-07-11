@@ -1,5 +1,5 @@
 import { Navbar, Footer } from "./components/index";
-import { AboutMe, Touch, Skills, MyWorks } from "./pages/index";
+import { AboutMe, Skills, MyWorks } from "./pages/index";
 import styled from "styled-components";
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
         <AboutMe />
         <Skills />
         <MyWorks />
-        <Touch />
         <Footer />
       </main>
     </Container>

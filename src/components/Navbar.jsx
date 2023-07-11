@@ -15,7 +15,6 @@ export const Navbar = () => {
     },
     { id: 2, name: "Skills", icon: <GiSkills /> },
     { id: 3, name: "MyWorks", icon: <MdWorkOutline /> },
-    { id: 4, name: "Touch", icon: <RiContactsLine /> },
   ];
   return (
     <Container>
@@ -73,5 +72,18 @@ const Container = styled.header`
         }
       }
     }
+  }
+  @media (max-width:412px){
+   flex-direction: column;
+   .navigation{
+    width: 100%;
+    ul{
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly
+    }
+   }
   }
 `;
