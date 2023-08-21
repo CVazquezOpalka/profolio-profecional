@@ -1,15 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap");
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
 
 *,
 *::before,
@@ -22,4 +11,6 @@
 html {
   scroll-behavior: smooth;
 }
-
+body{
+  overflow-x: hidden;
+}
