@@ -6,17 +6,17 @@ import LoginPage from "../assets/loginPage.png";
 import NetflixAPP from "../assets/netflixPageo.png";
 import PokeApp from "../assets/PokemonApp.png";
 import MotyApp from "../assets/rickAndMorty.png";
+import TimeApp from "../assets/TimeYou.png";
 import { CardRot } from "../components/CardRot";
 
 export const MyWorks = () => {
   return (
-    <Container id="MyWorks">
+    <Container id="Mis Trabajos">
       <h1
         style={{
           fontSize: "35px",
           width: "100%",
           textAlign: "center",
-          fontFamily: "Rubik dirt",
           textDecoration: "underline",
           marginBottom: "20px",
         }}
@@ -26,7 +26,9 @@ export const MyWorks = () => {
       <div className="content">
         <CardRot
           title={"Netflix Page"}
-          overview={"Pagina de detalle de una serie de netflix"}
+          overview={
+            "Pagina de presentacion de una serie de netflix, realizada con HTML y CSS3"
+          }
           image={Netflix}
           git={
             "https://github.com/CVazquezOpalka/proyectos-html-css/tree/main/10%20NetflixPage"
@@ -35,7 +37,9 @@ export const MyWorks = () => {
         />
         <CardRot
           title={"Scroll Page"}
-          overview={"Simulando efectos de Scroll"}
+          overview={
+            "Efecto de Scroll Trigger, realizado con HTML, CSS3 y Javascript"
+          }
           image={ScrollPage}
           git={
             "https://github.com/CVazquezOpalka/proyectos-js/tree/main/13%20Page%20dragon%20ball"
@@ -44,7 +48,9 @@ export const MyWorks = () => {
         />
         <CardRot
           title={"Login Animate Page"}
-          overview={"Efectos de Login y Register"}
+          overview={
+            "Efecto en pagina de Login y register, realizada con HTML,CSS3 y Javascript"
+          }
           image={LoginPage}
           git={
             "https://github.com/CVazquezOpalka/proyectos-js/tree/main/14%20Login%20translate"
@@ -53,17 +59,21 @@ export const MyWorks = () => {
         />
         <CardRot
           title={"Clon de NETFLIX"}
-          overview={"Tecnologias, react-redux, en proceso"}
+          overview={
+            "Tecnologias utilizadas en este Proyecto: Rect, Redux, Styled Components y Material UI"
+          }
           image={NetflixAPP}
-          git={"none"}
-          page={"none"}
+          git={"https://github.com/CVazquezOpalka/netflix-clon-con-react"}
+          page={"https://clon-netflix-cv.netlify.app"}
         />
         <CardRot
           title={"POKEDEX"}
-          overview={"Tecnologias, react-redux, en proceso de deploy"}
+          overview={
+            "Tecnologias utilizadas en este proyecto: React, Redux, CSS modules, React-icons, LocalStorage"
+          }
           image={PokeApp}
           git={"https://github.com/CVazquezOpalka/pi-pokemon-cristianvazquez"}
-          page={"https://pokedexapp-cv.netlify.app/"}
+          page={"https://pokemonappbycv.netlify.app"}
         />
         <CardRot
           title={"Rick and Morty"}
@@ -72,18 +82,22 @@ export const MyWorks = () => {
           git={"https://github.com/CVazquezOpalka/rick-and-morty-redux"}
           page={"https://rickandmortyappcv.netlify.app/"}
         />
+        <CardRot
+          title={"TimeYou"}
+          overview={
+            "Tecnologias utilizadas en este proyecto: React, Redux, Styled Components, Argolia, Sweet Alert, Local Storage, Auth de terceros y local"
+          }
+          image={TimeApp}
+          git={"https://github.com/CVazquezOpalka/timeyou-PF"}
+          page={"https://timeyou.vercel.app/"}
+        />
       </div>
-      <p>
-        {" "}
-        Estos son algunos de mis trabajos, si deseas ver mas contenido ingresa{" "}
-        <a href="https://github.com/CVazquezOpalka">aqui</a>
-      </p>
     </Container>
   );
 };
 
 const Container = styled.section`
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin: 10px auto;
   .content {
@@ -101,8 +115,8 @@ const Container = styled.section`
     margin-bottom: 30px;
     margin-top: 30px;
   }
-  @media (max-width: 412px) {
+  @media (max-width: 500px) {
     height: auto;
-    margin-bottom: 100px;
+    margin-top: 130px;
   }
 `;

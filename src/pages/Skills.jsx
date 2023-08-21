@@ -16,23 +16,23 @@ import FIREl from "../assets/logoFirebase.png";
 
 export const Skills = () => {
   return (
-    <Container id="Skills">
+    <Container id="Habilidades">
       <h1 style={{ textDecoration: "underline" }}>
-        Mis habilidades en la programacion
+        Mis habilidades en la programación
       </h1>
       <div className="content">
-        <Card title={"HTML"} image={HTMLl} score={5} />
-        <Card title={"CSS"} image={CSSl} score={5} />
-        <Card title={"JAVASCRIPT"} image={JSl} score={4} />
-        <Card title={"SASS"} image={SASSl} score={4} />
-        <Card title={"EXPRESS"} image={EXPRESSl} score={4} />
-        <Card title={"REACT"} image={REACTl} score={5} />
-        <Card title={"REDUX"} image={REDUXl} score={5} />
-        <Card title={"NODE JS"} image={NODEl} score={4} />
-        <Card title={"POSTGRESS"} image={POSTGRESl} score={4} />
-        <Card title={"MATERIAL UI"} image={MATERIALl} score={4} />
-        <Card title={"BOOTSTRAP"} image={BOOTSl} score={4} />
-        <Card title={"FIREBASE"} image={FIREl} score={4} />
+        <Card title={"HTML"} image={HTMLl} />
+        <Card title={"CSS"} image={CSSl} />
+        <Card title={"JAVASCRIPT"} image={JSl} />
+        <Card title={"SASS"} image={SASSl} />
+        <Card title={"EXPRESS"} image={EXPRESSl} />
+        <Card title={"REACT"} image={REACTl} />
+        <Card title={"REDUX"} image={REDUXl} />
+        <Card title={"NODE JS"} image={NODEl} />
+        <Card title={"POSTGRESS"} image={POSTGRESl} />
+        <Card title={"MATERIAL UI"} image={MATERIALl} />
+        <Card title={"BOOTSTRAP"} image={BOOTSl} />
+        <Card title={"FIREBASE"} image={FIREl} />
       </div>
     </Container>
   );
@@ -40,7 +40,7 @@ export const Skills = () => {
 
 const Container = styled.section`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -48,14 +48,13 @@ const Container = styled.section`
   justify-content: center;
   transition: 0.3 ease-in-out;
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
     text-align: center;
-    font-size: 35px;
-    font-family: "Rubik Dirt";
+    font-size: 30px;
   }
   .content {
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -65,7 +64,7 @@ const Container = styled.section`
   }
   @media (max-width: 875px) {
     width: 100%;
-    height: 900px;
+    height: 1600px;
     display: flex;
     flex-direction: column;
     align-items: center;

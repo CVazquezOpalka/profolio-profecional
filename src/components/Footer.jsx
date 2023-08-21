@@ -8,19 +8,27 @@ import {
 import { MdAlternateEmail } from "react-icons/md";
 
 export const Footer = () => {
+  const phoneNumber = "+5493888314283"; // Tu número de teléfono
+  const emailAddress = "cristianvazquez.dev@gmail.com";
+  const openWhatsApp = () => {
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}`);
+  };
+
   return (
     <Container>
       <div className="content_box">
         <div className="datos">
+          <h3>Contacto:</h3>
           <ul>
-            <li>Cristian Miguel Vazquez Opalka</li>
-            <li>
+            <li onClick={() => openWhatsApp()}>
               <AiOutlineWhatsApp className="whatsap" />
-              +549 3888-31-4283
+              {phoneNumber}
             </li>
             <li className="email">
-              <MdAlternateEmail className="email" />
-              cristianvazquez.dev@gmail.com
+              <a href={`mailto:${emailAddress}`}>
+                <MdAlternateEmail className="email" />
+                {emailAddress}
+              </a>
             </li>
           </ul>
         </div>
@@ -41,13 +49,6 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="copyrigth">
-        <p>
-          <i>
-            Web de Portfolio creada por Cristian Vazquez, derechos reservados
-          </i>
-        </p>
       </div>
     </Container>
   );
@@ -87,6 +88,17 @@ const Container = styled.footer`
           font-weight: 500;
           letter-spacing: 1px;
           gap: 10px;
+          a{
+            display: flex;
+          align-items: center;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          gap: 10px;
+          text-decoration: none;
+          color: #fff;
+          }
+          cursor: pointer;
           .whatsap {
             font-size: 25px;
             color: lightgreen;
@@ -124,15 +136,27 @@ const Container = styled.footer`
   .copyrigth {
     text-transform: uppercase;
   }
-  @media (max-width: 384px) {
-    height: 300px;
+  @media (max-width: 500px) {
+    margin-top: 30px;
+    width: 100%;
+    height: 260px;
     .content_box {
+
       flex-direction: column;
-      justify-content: space-evenly;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       .datos {
         width: 100%;
-        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+       ul{
+        width: 90%;
+        height:150px;
+        display: flex;
+        flex-direction: column;
+        
+       }
       }
       .social {
         width: 100%;
@@ -141,11 +165,6 @@ const Container = styled.footer`
           justify-content: center;
         }
       }
-    }
-    .copyrigth {
-      width: 100%;
-
-      text-align: center;
     }
   }
 `;
