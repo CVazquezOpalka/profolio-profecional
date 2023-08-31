@@ -102,7 +102,7 @@ const Container = styled.footer`
           .whatsap {
             font-size: 25px;
             color: lightgreen;
-          }
+          } 
           .email {
             font-size: 25px;
             color: lightblue;
