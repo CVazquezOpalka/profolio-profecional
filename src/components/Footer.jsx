@@ -8,7 +8,7 @@ import {
 import { MdAlternateEmail } from "react-icons/md";
 
 export const Footer = () => {
-  const phoneNumber = "+5493888314283"; // Tu número de teléfono
+  const phoneNumber = "+5493888314283";
   const emailAddress = "cristianvazquez.dev@gmail.com";
   const openWhatsApp = () => {
     window.open(`https://wa.me/5493888314283`);
@@ -88,15 +88,15 @@ const Container = styled.footer`
           font-weight: 500;
           letter-spacing: 1px;
           gap: 10px;
-          a{
+          a {
             display: flex;
-          align-items: center;
-          font-size: 18px;
-          font-weight: 500;
-          letter-spacing: 1px;
-          gap: 10px;
-          text-decoration: none;
-          color: #fff;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
           }
           cursor: pointer;
           .whatsap {
@@ -141,7 +141,6 @@ const Container = styled.footer`
     width: 100%;
     height: 260px;
     .content_box {
-
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -150,13 +149,12 @@ const Container = styled.footer`
         width: 100%;
         display: flex;
         flex-direction: column;
-       ul{
-        width: 90%;
-        height:150px;
-        display: flex;
-        flex-direction: column;
-        
-       }
+        ul {
+          width: 90%;
+          height: 150px;
+          display: flex;
+          flex-direction: column;
+        }
       }
       .social {
         width: 100%;
