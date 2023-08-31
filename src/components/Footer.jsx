@@ -11,7 +11,7 @@ export const Footer = () => {
   const phoneNumber = "+5493888314283"; // Tu número de teléfono
   const emailAddress = "cristianvazquez.dev@gmail.com";
   const openWhatsApp = () => {
-    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}`);
+    window.open(`https://wa.me/5493888314283`);
   };
 
   return (
