@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeroImage from "../assets/heroN.png";
-import CV from "../assets/CVpdf.pdf";
+import CV from "../assets/CV-CristianVazquez.pdf";
 
 export const AboutMe = () => {
   return (
