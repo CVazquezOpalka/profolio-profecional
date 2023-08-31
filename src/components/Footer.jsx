@@ -10,9 +10,6 @@ import { MdAlternateEmail } from "react-icons/md";
 export const Footer = () => {
   const phoneNumber = "+5493888314283";
   const emailAddress = "cristianvazquez.dev@gmail.com";
-  const openWhatsApp = () => {
-    window.open(`https://wa.me/5493888314283`);
-  };
 
   return (
     <Container>
@@ -20,9 +17,11 @@ export const Footer = () => {
         <div className="datos">
           <h3>Contacto:</h3>
           <ul>
-            <li onClick={() => openWhatsApp()}>
-              <AiOutlineWhatsApp className="whatsap" />
-              {phoneNumber}
+            <li>
+              <a href="https://wa.me/5493888314283" target="_blank">
+                <AiOutlineWhatsApp className="whatsap" />
+                {phoneNumber}
+              </a>
             </li>
             <li className="email">
               <a href={`mailto:${emailAddress}`}>
