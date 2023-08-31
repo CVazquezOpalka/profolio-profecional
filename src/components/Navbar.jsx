@@ -128,7 +128,7 @@ const Container = styled.header`
 
     .content {
       position: relative;
-      width: 90%;
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -138,12 +138,15 @@ const Container = styled.header`
         opacity: 1;
         visibility: visible;
       }
+      picture{
+        margin-left: 10px;
+      }
       ul {
-        top: -1000px;
-        background-color: bisque;
-        width: 100vw;
-        height: 100vh;
         position: absolute;
+        top: -1000px;
+        background-color:rgb(231, 226, 228);
+        width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,6 +156,7 @@ const Container = styled.header`
         transition: 0.5s ease-in-out;
         opacity: 0;
         visibility: hidden;
+       
       }
       .btn {
         display: flex;
