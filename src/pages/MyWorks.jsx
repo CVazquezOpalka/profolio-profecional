@@ -77,10 +77,12 @@ export const MyWorks = () => {
         />
         <CardRot
           title={"Rick and Morty"}
-          overview={"Tecnologias, react-redux, primer proyecto"}
+          overview={
+            "Tecnologias, react-redux, Firebase, Styled components, filtros convinados con barra de busqueda, localstorage"
+          }
           image={MotyApp}
-          git={"https://github.com/CVazquezOpalka/rick-and-morty-redux"}
-          page={"https://rickandmortyappcv.netlify.app/"}
+          git={"https://github.com/CVazquezOpalka/maquetado-rick-and-morty"}
+          page={"https://rickandmortypage-cv.netlify.app/"}
         />
         <CardRot
           title={"TimeYou"}
